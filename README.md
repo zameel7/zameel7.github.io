@@ -8,4 +8,4 @@
 
 <hr>
 
-Hosted in Github Pages [here](https://zameel7.github.io/zameel-hassan/)
+Hosted in Github Pages [here](https://zameel7.github.io)
