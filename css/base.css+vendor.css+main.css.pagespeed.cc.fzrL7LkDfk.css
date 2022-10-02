@@ -3176,7 +3176,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav a:hover,
 .header-nav a:focus,
 .header-nav a:active {
-    color: white;
+    color: #156eae;
 }
 
 .header-nav h3 {
@@ -3217,6 +3217,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav__list a,
 .header-nav__list a:visited {
     color: #FFFFFF;
+}
+
+.header-nav__list a:hover,
+.header-nav__list a:focus,
+.header-nav__list a:active {
+    color: #156eae;
 }
 
 .header-nav__social {
