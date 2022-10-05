@@ -20,6 +20,7 @@
 }
 
 .text p {
+  width: auto;
   display: inline-block;
   vertical-align: top;
   margin: 0;
