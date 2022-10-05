@@ -8,19 +8,43 @@
 }
 
 .text {
-  position: relative;
   font-family: "montserrat-medium", sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  width: 50%;
   height: 3rem;
   top: 50%;
-  margin-top: -20px;
   margin-left: 0;
+  margin-top: -20px;
+}
+
+@media only screen and (max-width: 480px){
+  .text {
+    text-align: left;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .text {
+    text-align: left;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .text {
+    text-align: left;
+    margin-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 280px){
+  .text {
+    display: none;
+  }
 }
 
 .text p {
-  width: auto;
   display: inline-block;
   vertical-align: top;
   margin: 0;
