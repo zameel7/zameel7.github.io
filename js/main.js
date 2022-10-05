@@ -61,7 +61,7 @@ function splitLetters(word) {
 }
 
 changeWord();
-setInterval(changeWord, 6000);
+setInterval(changeWord, 3000);
 
 
 
