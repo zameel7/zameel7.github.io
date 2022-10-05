@@ -8,14 +8,15 @@
 }
 
 .text {
+  position: relative;
   font-family: "montserrat-medium", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   width: 50%;
-  left: 50%;
   height: 3rem;
   top: 50%;
   margin-top: -20px;
+  margin-left: 0;
 }
 
 .text p {
