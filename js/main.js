@@ -396,24 +396,19 @@ setInterval(changeWord, 3000);
             submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
-                formData = {
-                    'name': $('input[name=name]').val(),
-                    'email': $('input[name=email]').val(),
-                    'subject': $('input[name=subject]').val(),
-                    'message': $('textarea[name=message]').val()
-                  };
-    
+                console.log(form.serialize())
                 $.ajax({
     
-                    url: "php/mail.php",
                     type: "POST",
-                    data: formData,
+                    url: "inc/sendEmail.php",
+                    data: $(form).serialize(),
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
     
                     },
                     success: function(msg) {
+    
                         // Message was sent
                         if (msg == 'OK') {
                             sLoader.slideUp("slow"); 
