@@ -5181,7 +5181,7 @@ footer .row {
 .go-top {
     position: fixed;
     bottom: 30px;
-    left: 30px;
+    right: 30px;
     z-index: 600;
     display: none;
 }
