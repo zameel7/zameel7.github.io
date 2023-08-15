@@ -198,15 +198,18 @@ setInterval(changeWord, 3000);
             $folioItems.each(function(i) {
 
                 $(this).on('click', function(e) {
-                    e.preventDefault();
-                    var options = {
-                        index: i,
-                        showHideOpacity: true
+                    if (e.target.className !== 'icon-link' && e.target.className !== 'item-folio__project-link') {
+                        console.log(e.target.className);
+                        e.preventDefault();
+                        var options = {
+                            index: i,
+                            showHideOpacity: true
+                        }
+                        
+                        // initialize PhotoSwipe
+                        var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                        lightBox.init();
                     }
-
-                    // initialize PhotoSwipe
-                    var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-                    lightBox.init();
                 });
 
             });

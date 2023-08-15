@@ -4184,6 +4184,30 @@ html.cl-loaded .home-content__main {
     margin-top: -23.4rem;
 }
 
+.works-content__buttons {
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.works-content__buttons .btn {
+    width: 215px;
+    border-color: #4a95cc;
+    color: #4a95cc;
+    margin: 1.5rem 1.5rem 0 0;
+    letter-spacing: .25rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.works-content__buttons .btn:last-child {
+    margin-right: 0;
+}
+
+.works-content__buttons .btn:hover, 
+.works-content__buttons .btn:focus {
+    background: #4a95cc !important;
+    color: #FFFFFF;
+}
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -4685,6 +4709,7 @@ html.cl-loaded .home-content__main {
     font-size: 1.5rem;
     line-height: 2;
     position: relative;
+    padding-bottom: 0;
 }
 
 .contact-content h3 {
@@ -4765,6 +4790,7 @@ html.cl-loaded .home-content__main {
 
 .contact-primary {
     width: 65%;
+    height: 60% !important;
 }
 
 .contact-primary #contactForm {
@@ -4937,6 +4963,7 @@ html.cl-loaded .home-content__main {
 @media only screen and (max-width: 1000px) {
     .contact-content {
         max-width: 700px;
+        text-align: center;
     }
     .contact-primary, .contact-secondary {
         float: none;
@@ -4973,7 +5000,6 @@ html.cl-loaded .home-content__main {
         top: -7.2rem;
     }
     .contact-content {
-        padding-bottom: 12rem;
         text-align: center;
     }
     .contact-primary, .contact-secondary {
@@ -5155,7 +5181,7 @@ footer .row {
 .go-top {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     z-index: 600;
     display: none;
 }
