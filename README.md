@@ -5,7 +5,3 @@
 - HTML
 - CSS
 - JS
-
-<hr>
-
-Visit website: [zameel7.live](https://zameel7.live)
